@@ -20,9 +20,8 @@ This project specializes in implementing common Windows user-mode (Ring3) concea
 **Module Concealment**: Relies on PEB chain manipulation for module hiding, which makes modules invisible in most tools but is generally unreliable and easily detected. DLL reflective injection is considered a better alternative.
 
 ### Preview
-<video id="video" controls="" preload="none">
-      <source id="mp4" src="https://github.com/coldpon/ring3-hidden/blob/master/1%20(2)%20(2)%20(2).mp4" type="video/mp4">
-</videos>
+
+https://github.com/coldpon/ring3-hidden/assets/95997133/923f9a14-896f-4ab4-a76c-ffa5f76f5316
 
 
 ### Technical Summary
