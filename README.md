@@ -1,5 +1,5 @@
 <p align="left">
-    <a href="README_CN.md">中文</a>&nbsp;&nbsp;&nbsp;｜&nbsp;&nbsp;&nbsp;English&nbsp;&nbsp;&nbsp;
+    <a href="README.md">English</a>&nbsp;&nbsp;&nbsp;｜&nbsp;&nbsp;&nbsp;English&nbsp;&nbsp;&nbsp;
 </p>
 ## Ring3 Hidden - File, Directory, Service, and Process Concealment Project
 
