@@ -27,7 +27,7 @@ https://github.com/coldpon/ring3-hidden/assets/95997133/923f9a14-896f-4ab4-a76c-
 
 ### Technical Summary
 
-```markdown
+
 | hide | 方法 |
 | -------- | -------- |
 | 隐藏进程 | hook NtQuerySystemInformation |
@@ -36,7 +36,6 @@ https://github.com/coldpon/ring3-hidden/assets/95997133/923f9a14-896f-4ab4-a76c-
 | 隐藏文件 | hook ntQueryDirectoryFile    setfileattributes() |
 | 隐藏模块 |  PEB 断链 |
 
-```
 
 ### Installation & Usage
 
