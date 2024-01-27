@@ -28,14 +28,14 @@ https://github.com/coldpon/ring3-hidden/assets/95997133/923f9a14-896f-4ab4-a76c-
 ### Technical Summary
 
 ```markdown
-/*
-ring3 hidden        Hiding Techniques Summary
-Hide Processes          hook NtQuerySystemInformation
-Hide Startup Items     NtCreateKeyEx     NtDeleteKeyEx
-Hide Services          Utilize ACLs to hide Windows services
-Hide Files             hook ntQueryDirectoryFile    setfileattributes()
-Hide Modules           PEB Chain Manipulation
-*/
+| hide | 方法 |
+| -------- | -------- |
+| 隐藏进程 | hook NtQuerySystemInformation |
+| 隐藏自启动项 | NtCreateKeyEx     NtDeleteKeyEx |
+| 隐藏服务 | 利用 ACL 隐藏Windows 服务 |
+| 隐藏文件 | hook ntQueryDirectoryFile    setfileattributes() |
+| 隐藏模块 |  PEB 断链 |
+
 ```
 
 ### Installation & Usage
