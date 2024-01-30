@@ -30,3 +30,4 @@
 *.exe
 *.out
 *.app
+/.vs/ring3 hidden/v17/Browse.VC.db
