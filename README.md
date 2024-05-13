@@ -57,11 +57,6 @@ https://github.com/coldpon/ring3-hidden/assets/95997133/66684fde-7295-4102-89e3-
 欢迎所有贡献者参与项目优化、漏洞修复、增加新功能等工作。请遵循GitHub提供的常规流程提交pull request，并在issue板块讨论相关问题。
 
 ##  参考
-
-[渗透技巧——“隐藏”注册表的创建 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/32179721)			
-
 [ntQueryDirectoryFile 函数 (ntifs.h) - Windows drivers | Microsoft Learn](https://learn.microsoft.com/zh-cn/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntquerydirectoryfile)
 
 [NtQuerySystemInformation 函数 (winternl.h) - Win32 apps | Microsoft Learn](https://learn.microsoft.com/zh-cn/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation)
-
-[bytecode77/r77-rootkit: Fileless ring 3 rootkit with installer and persistence that hides processes, files, network connections, etc. (github.com)](https://github.com/bytecode77/r77-rootkit)
