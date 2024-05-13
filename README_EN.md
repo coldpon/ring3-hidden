@@ -57,7 +57,5 @@ Contributions from all participants are welcome for project optimization, vulner
 
 ### References
 
-- ["渗透技巧——“隐藏”注册表的创建" on Zhihu](https://zhuanlan.zhihu.com/p/32179721)
 - [ntQueryDirectoryFile function (ntifs.h) - Windows drivers | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntquerydirectoryfile)
 - [NtQuerySystemInformation function (winternl.h) - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation)
-- [bytecode77/r77-rootkit: Fileless ring 3 rootkit with installer and persistence that hides processes, files, network connections, etc.](https://github.com/bytecode77/r77-rootkit)
