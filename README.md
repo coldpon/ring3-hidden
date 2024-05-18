@@ -12,13 +12,9 @@ This project specializes in implementing common Windows user-mode (Ring3) concea
 
 **Process Hiding**: Implements API Hooking during the process creation and enumeration phases to bypass checks, thus achieving stealthy process invisibility. Hooked API: NtQuerySystemInformation. This hook is effective against tools like Process Hacker.
 
-**Startup Item Concealment**: Uses Native APIs for registry read/write operations to hide startup items. This method achieves excellent concealment, making hidden startup items undetectable even by dedicated utilities such as火绒's Startup Management and Sysinternals Autoruns. Principle reference: ["渗透技巧——“隐藏”注册表的创建" on Zhihu](https://zhuanlan.zhihu.com/p/32179721).
+**Startup Item Concealment**: Uses Native APIs for registry read/write operations to hide startup items. This method achieves excellent concealment, making hidden startup items undetectable even by dedicated utilities such as火绒's Startup Management and Sysinternals Autoruns. 
 
 **Module Concealment**: Relies on PEB chain manipulation for module hiding, which makes modules invisible in most tools but is generally unreliable and easily detected. DLL reflective injection is considered a better alternative.
-
-### Preview
-
-https://github.com/coldpon/ring3-hidden/assets/95997133/923f9a14-896f-4ab4-a76c-ffa5f76f5316
 
 
 ### Technical Summary
