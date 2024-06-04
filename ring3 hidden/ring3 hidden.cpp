@@ -1,14 +1,7 @@
 ﻿#include"hideService.h"
 #include"hideAutorun.h"
 
-/*
-##ring3 hidden        隐藏技术总结
-#隐藏进程           hook ntquerysysteminformation
-#隐藏自启动项       ntcreatekeyex     ntdeletekeyex
-#隐藏服务           利用 ACL 隐藏Windows 服务
-#隐藏文件		hook ntQueryDirectoryFile    setfileattributes()
-#隐藏模块             PEB 断链
-*/
+
 
 /*
 ##Summary of hidden technology in ring3
